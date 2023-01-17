@@ -54,13 +54,58 @@
         <header class="py-5 bg-dark hextuda-"> 
             <div class="container px-4 px-lg-5 my-5">
                 <div class="hutidori text-center text-white ">
-                    <h1 class="display-4 fw-bolder">佐賀大学周辺の食品ロスをゼロに
+                    <h1 class="display-4 fw-bolder">フードバンクさが
                     </h1>
-                    <p class="lead fw-normal text-white mb-0">消費期限間近の食品販売サービス</p>
+                    <p class="lead fw-normal text-white mb-0">佐賀大学周辺の食品ロスをゼロに</p><p>~賞味期限間近の食べ物をお安く提供します~</p>
                 </div>
             </div>
         </header>
         <!-- Section-->
+        <p　class="text-center text-white">取り置き可能な商品</p>
+        
+        <div class="sample">
+          <input type="radio" name="categories" id="All" value="All" checked>
+          <input type="radio" name="categories" id="Blue" value="Blue">
+          <input type="radio" name="categories" id="Green" value="Green">
+          <input type="radio" name="categories" id="Red" value="Red">
+          <input type="radio" name="categories" id="Square" value="Square">
+          <input type="radio" name="categories" id="Circle" value="Circle">
+          <!-- ラベルを分離 -->
+          <ol class="filters">
+            <li><label for="All"> All </label></li>
+            <li><label for="Blue"> Blue </label></li>
+            <li><label for="Green"> Green </label></li>
+            <li><label for="Red"> Red </label></li>
+            <li><label for="Square"> Square </label></li>
+            <li><label for="Circle"> Circle </label></li>
+          </ol>
+          <ol class="targets">
+            <li class="target" data-category="Square">
+              <div class="square"></div>
+            </li>
+            <li class="target" data-category="Circle">
+              <div class="circle"></div>
+            </li>
+            <li class="target" data-category="Blue Square">
+              <div class="blue square"></div>
+            </li>
+            <li class="target" data-category="Blue Circle">
+              <div class="blue circle"></div>
+            </li>
+            <li class="target" data-category="Green Square">
+              <div class="green square"></div>
+            </li>
+            <li class="target" data-category="Green Circle">
+              <div class="green circle"></div>
+            </li>
+            <li class="target" data-category="Red Square">
+              <div class="red square"></div>
+            </li>
+            <li class="target" data-category="Red Circle">
+              <div class="red circle"></div>
+            </li>
+          </ol>
+        </div>
         
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
