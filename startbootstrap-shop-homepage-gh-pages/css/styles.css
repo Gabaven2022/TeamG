@@ -3031,20 +3031,20 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0fd723;
-  border-color: #0fd723;
+  color: rgb(255, 255, 255);
+  background-color:lightsalmon;
+  border-color:lightsalmon;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #07b318;
-  border-color:  #07b318;
+  background-color:lightsalmon;
+  border-color:lightsalmon;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color:  #07b318;
-  border-color:  #07b318;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background-color:lightsalmon;
+  border-color:lightsalmon;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -11317,8 +11317,8 @@ textarea.form-control-lg {
   }
   .targets {
     display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit, 60px);
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, 200px);
     margin-top: 40px;
   }
   .circle, .square {
@@ -11373,8 +11373,8 @@ textarea.form-control-lg {
     transition: all 0.2s;
   }
   .filters label:hover {
-    background: #333;
-    color: #fff;
+    background:lightsalmon;
+    color:#000;
   }
   [value="All"]:checked ~ .filters [for="All"], 
   [value="Blue"]:checked ~ .filters [for="Blue"], 
@@ -11382,7 +11382,7 @@ textarea.form-control-lg {
   [value="Red"]:checked ~ .filters [for="Red"], 
   [value="Square"]:checked ~ .filters [for="Square"], 
   [value="Circle"]:checked ~ .filters [for="Circle"] {
-    background: #333;
-    color: #fff;
+    background:lightsalmon;
+    color:#000;
   }
 	

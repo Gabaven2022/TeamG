@@ -60,9 +60,10 @@
                 </div>
             </div>
         </header>
-        <!-- Section-->
+        <p></p>
+        <p></p>
         <p　class="text-center text-white">取り置き可能な商品</p>
-        
+        <!-- いらない-->
         <div class="sample">
           <input type="radio" name="categories" id="All" value="All" checked>
           <input type="radio" name="categories" id="Blue" value="Blue">
@@ -72,472 +73,455 @@
           <input type="radio" name="categories" id="Circle" value="Circle">
           <!-- ラベルを分離 -->
           <ol class="filters">
-            <li><label for="All"> All </label></li>
-            <li><label for="Blue"> Blue </label></li>
-            <li><label for="Green"> Green </label></li>
-            <li><label for="Red"> Red </label></li>
-            <li><label for="Square"> Square </label></li>
-            <li><label for="Circle"> Circle </label></li>
+            <li><label for="All"> 全て表示 </label></li>
+            <li><label for="Blue"> おにぎり </label></li>
+            <li><label for="Green"> パン </label></li>
+            <li><label for="Red"> 弁当 </label></li>
+            <li><label for="Square"> 揚げ物 </label></li>
+            <!--
+              <li><label for="Circle"> circle</label></li>
+            -->
           </ol>
+              
+          
           <ol class="targets">
+            <li class="target" data-category="Square">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/potato.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">フライドポテト</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">150円</span>
+                            50円
+                        </div>
+                    </div>
+                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  取り置き
+</button>
+
+                              <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          在庫切れが発生する場合があります
+          <div class="card" style="width: 18rem;">
+              <svg class="bd-placeholder-img card-img-top" img src="img/potato.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/potato.jpg"/></text></svg>
+              <div class="card-body">
+                <p class="card-text"> <h>フライドポテト </h>
+                  <p>〜〜コンビニ〇〇店</p>
+                  <p>50円</p>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">取り置きする</button>
+      </div>
+    </div>
+  </div>
+</div>
+                         
+                      </div>
+                  </div>
+            </li>
+            <li class="target" data-category="Green">
+              <div class="col mb-5">
+                <div class="card h-100">
+                   
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/dog.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">ホットドッグ</h5>
+                            <!-- Product reviews
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                          -->
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">150円</span>
+                            100円
+                        </div>
+                    </div>
+                          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Red">
+              <div class="col mb-5">
+                <div class="card h-100">            
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/bentou1.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">牛丼弁当</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">400円</span>
+                            300円
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+      <svg class="bd-placeholder-img card-img-top" img src="img/bentou1.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/bentou1.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>牛丼弁当</h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>300円</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Red">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/bentou2.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">焼きシャケ弁当</h5>
+                            
+                            <!-- Product price-->
+                            200円
+                        </div>
+                    </div>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Green">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/donut.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">苺ドーナツ</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">200円</span>
+                            100円
+                        </div>
+                    </div>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Green">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/kurowaxtusan.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">クロワッサン</h5>
+                            <!-- Product price-->
+                            160円
+                        </div>
+                    </div>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Blue">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/onigiri.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">おにぎり　海老マヨ</h5>
+                           
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">150円</span>
+                            100円
+                        </div>
+                    </div>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+            </li>
+            <li class="target" data-category="Red Circle">
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img/yakisobapan.jpeg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">焼きそばパン</h5>
+                           
+                            <!-- Product price-->
+                            80円
+                        </div>
+                    </div>
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+取り置き
+</button>
+
+                        <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    在庫切れが発生する場合があります
+    <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
+        <div class="card-body">
+          <p class="card-text"> <h>ホットドッグ </h>
+            <p>ーーコンビニ〇〇店</p>
+            <p>¥100</p>
+        </div>
+      </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+  <button type="button" class="btn btn-primary">取り置きする</button>
+</div>
+</div>
+</div>
+</div>
+            </li>
             <li class="target" data-category="Square">
               <div class="square"></div>
             </li>
             <li class="target" data-category="Circle">
               <div class="circle"></div>
             </li>
-            <li class="target" data-category="Blue Square">
-              <div class="blue square"></div>
-            </li>
-            <li class="target" data-category="Blue Circle">
-              <div class="blue circle"></div>
-            </li>
-            <li class="target" data-category="Green Square">
-              <div class="green square"></div>
-            </li>
-            <li class="target" data-category="Green Circle">
-              <div class="green circle"></div>
-            </li>
-            <li class="target" data-category="Red Square">
-              <div class="red square"></div>
-            </li>
             <li class="target" data-category="Red Circle">
               <div class="red circle"></div>
             </li>
           </ol>
-        </div>
+       </div>
+            </div>
+      </div>
+      </section>
+         
+       
         
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/potato.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">フライドポテト</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">150円</span>
-                                    50円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/potato.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/potato.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>フライドポテト </h>
-                    <p>〜〜コンビニ〇〇店</p>
-                    <p>50円</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                           
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                           
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/dog.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">ホットドッグ</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">150円</span>
-                                    100円
-                                </div>
-                            </div>
-                                  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col mb-5">
-                        <div class="card h-100">            
-                            <!-- Sale badge-->
-                            
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                          
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/bentou1.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">牛丼弁当</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">400円</span>
-                                    300円
-                                </div>
-                            </div>
-                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-              <svg class="bd-placeholder-img card-img-top" img src="img/bentou1.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/bentou1.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>牛丼弁当</h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>300円</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/bentou2.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">焼きシャケ弁当</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    200円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/donut.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">苺ドーナツ</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">200円</span>
-                                    100円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/kurowaxtusan.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">クロワッサン</h5>
-                                    <!-- Product price-->
-                                    160円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/onigiri.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">おにぎり　海老マヨ</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">150円</span>
-                                    100円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/yakisobapan.jpeg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">焼きそばパン</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    80円
-                                </div>
-                            </div>
-                                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    取り置き
-  </button>
-
-                                <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">この商品を取り置きしますか？</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            在庫切れが発生する場合があります
-            <div class="card" style="width: 18rem;">
-                <svg class="bd-placeholder-img card-img-top" img src="img/dog.jpg" width="106" height="75" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img src="img/dog.jpg"/></text></svg>
-                <div class="card-body">
-                  <p class="card-text"> <h>ホットドッグ </h>
-                    <p>ーーコンビニ〇〇店</p>
-                    <p>¥100</p>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-          <button type="button" class="btn btn-primary">取り置きする</button>
-        </div>
-      </div>
-    </div>
-  </div>
-        </section>
+       
+        
+     
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
