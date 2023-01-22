@@ -41,10 +41,10 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <button type="button" class="btn btn-outline-primary" onclick="location.href='取り置き確定画面.html'">
+                          <i class="bi-cart-fill me-1"></i>
+                          取り置き中の商品
+                          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
                 </div>
@@ -60,9 +60,11 @@
                 </div>
             </div>
         </header>
-        <p></p>
-        <p></p>
-        <p　class="text-center text-white">取り置き可能な商品</p>
+       <p style="text-align: center;">
+        販売中の商品  
+        <br>取り置きもできます
+          </p>
+       </p>
         <!-- いらない-->
         <div class="sample">
           <input type="radio" name="categories" id="All" value="All" checked>
@@ -129,6 +131,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
         <button type="button" class="btn btn-primary">取り置きする</button>
+       
       </div>
     </div>
   </div>
