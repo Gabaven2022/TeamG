@@ -3285,27 +3285,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: red;
-  border-color: red;
+  color: orange;
+  border-color: orange;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: red;
-  border-color: red;
+  background-color: orange;
+  border-color: orange;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
 }
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #fff;
-  background-color: red;
-  border-color: red;
+  background-color: orange;
+  border-color: orange;
 }
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: red;
+  color: oranged;
   background-color: transparent;
 }
 
@@ -7667,10 +7667,10 @@ textarea.form-control-lg {
   font-weight: bolder !important;
 }
 
-.sadaiitiba{
+.orange{
   font-size: 80px;
     font-weight: bolder !important;
-    text-shadow: -2px -2px 0 white, -2px 0 0 , -2px 2px 0 red,
+    text-shadow: -2px -2px 0 , -2px 0 0 , -2px 2px 0 red,
     0 -2px 0 red,                  0 2px 0 red,
   2px -2px 0 red,  2px 0 0 red,  2px 2px 0 red;
     font-family: ヒラギノ角ゴシック;
@@ -11417,8 +11417,4 @@ textarea.form-control-lg {
 	
   .boximage{
     color: #c7dbd2;
-  }
-
-  .price{
-    color: red;
   }
