@@ -3046,17 +3046,17 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: rgb(255, 255, 255);
-  background-color:red;
+  background-color:orange;
   border-color:white;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color:red;
+  background-color:orange;
   border-color:#ffb677;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color:red;
+  background-color:orange;
   border-color:white;
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
 }
